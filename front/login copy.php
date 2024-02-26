@@ -25,17 +25,22 @@
     function login() {
         let acc = $("#acc").val()
         let pw = $("#pw").val()
-        $.post('./api/chk_acc.php',{acc}, (res) => {
+        $.post('./api/chk_acc.php', {
+            acc
+        }, (res) => {
             if (parseInt(res) == 0) {
                 console.log("check_acc")
                 alert("查無帳號")
             } else {
-                $.post("./api/chk_pw.php", {acc,pw}, (res) => {
+                $.post("./api/chk_pw.php", {
+                    acc,
+                    pw
+                }, (res) => {
                     if (parseInt(res) == 1) {
                         if (acc == 'admin') {
-                            location.href="back.php"
+                            location.href = "back.php"
                         } else {
-                            location.href="index.php"
+                            location.href = "index.php"
                         }
                     } else {
                         alert("密碼錯誤")
