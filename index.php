@@ -8,7 +8,7 @@
 
 	<title>健康促進網</title>
 	<link href="./css/css.css" rel="stylesheet" type="text/css">
-	<script src="./js/jquery-1.9.1.min.js"></script>
+	<script src="./js/jquery-3.4.1.min.js"></script>
 	<script src="./js/js.js"></script>
 </head>
 
@@ -24,7 +24,7 @@
 		<a href="index.php" style="float:right">回首頁</a>
 	        </div>
 		<div id="title2">
-			<a href="index.php"><img src="./icon/02B01.jpg" title="健康促進網-回首頁"></a>
+			<a href="index.php"><img src="./icon/banner.jpg" title="健康促進網-回首頁"></a>
 		</div>
 		<div id="mm">
 			<div class="hal" id="lef">
