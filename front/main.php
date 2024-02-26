@@ -1,32 +1,31 @@
 <style>
-    .tags {
+    .tags{
         display: flex;
-        margin-left:1px;
+        margin-left: 1px;;
     }
-
-    .tag {
+    .tag{
         width: 100px;
-        padding: 5px 10px;
         border: 1px solid black;
-        margin-left: -1px;
         border-radius: 5px 5px 0 0;
+        padding:5px 10px;
+        margin-left: -1px;
         text-align: center;
         background-color: #ccc;
         cursor: pointer;
-    }
 
+        
+    }
     article section{
         border: 1px solid black;
-        border-radius: 0px 5px 5px 5px;
+        border-radius: 0 5px 5px 5px;
         min-height: 480px;
         margin-top: -1px;
         display: none;
         padding: 15px;
     }
-.active{
-        background-color: white;
+    .active{
         border-bottom: 1px solid white;
-        
+        background: white;
     }
 </style>
 <div class="tags">
@@ -36,7 +35,7 @@
     <div id="sec04" class="tag">慢性病防治</div>
 </div>
 <article>
-    <section id="section01" style="display:block;" >
+    <section id="section01" style="display: block;">
         <h2>健康新知</h2>
         <pre>
 缺乏運動已成為影響全球死亡率的第四大危險因子-國人無規律運動之比率高達72.2%
@@ -135,12 +134,11 @@
     </section>
 </article>
 <script>
-    $('.tag').on('click',function(){
-        $('.tag').removeClass('active')
-        $(this).addClass('active')
+    $(".tag").on("click",function(){
+        $(".tag").removeClass('active');
+        $(this).addClass('active');
         let id=$(this).attr('id').replace("sec","section")
         $("section").hide()
-        $('#'+id).show()
+        $("#"+id).show()
     })
-
 </script>
